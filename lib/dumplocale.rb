@@ -1,0 +1,3 @@
+module Dumplocale
+  # Your code goes here...
+end
