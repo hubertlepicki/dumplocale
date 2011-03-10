@@ -1,0 +1,12 @@
+Add to Gemfile:
+
+    gem 'dumplocale'
+
+From within Rails.root, run:
+
+    $ rake dumplocale:to_yaml
+
+All locales are extracted to Rails.root/tmp/locales directory.
+
+Author: Hubert Łępicki <hubert.lepicki@amberbit.com>
+License: MIT
