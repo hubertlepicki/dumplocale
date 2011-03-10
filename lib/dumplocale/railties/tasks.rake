@@ -8,7 +8,7 @@ namespace :dumplocale do
     FileUtils.mkdir_p dest_dir
     I18n.available_locales.each do |locale|
       File.open File.join(dest_dir, "#{locale}.yml"), "w+" do |f|
-        f.write I18n.backend.instance_variable_get("@translations")[locale].to_yaml
+        f.write {locale => I18n.backend.instance_variable_get("@translations")[locale]}.to_yaml
       end
     end
   end
