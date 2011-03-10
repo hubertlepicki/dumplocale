@@ -1,3 +1,1 @@
-module Dumplocale
-  # Your code goes here...
-end
+require 'dumplocale/engine' if defined?(Rails) && Rails::VERSION::MAJOR == 3
